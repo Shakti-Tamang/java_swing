@@ -5,7 +5,7 @@ public class UserModel {
     private int id;
     private String name, adress, gender, course;
     private int age;
-    private String imagePath; // store image path
+    private String imagePath; 
 
     public int getId() {
         return id;
