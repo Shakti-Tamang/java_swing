@@ -18,7 +18,7 @@ public class SaveUserImpl implements SaveUser {
 		
 		try {
 			
-			String sql="insert into userInsert(name,address,gender,course,age)values(?,?,?,?,?)";
+			String sql="insert into userInsert(name,address,gender,course,age,imagepath)values(?,?,?,?,?,?)";
 			
 			ps=DbConnection.getConnection().prepareStatement(sql);
 			
@@ -26,7 +26,8 @@ public class SaveUserImpl implements SaveUser {
 			ps.setString(2, model.getAdress());
 			ps.setString(3, model.getGender());
 			ps.setString(4,model.getCourse());
-			ps.setInt(5, model.getAge());   
+			ps.setInt(5, model.getAge());  
+			ps.setString(6, model.getImagePath());
 			ps.executeUpdate();
 		}
 		
