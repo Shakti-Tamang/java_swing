@@ -1,59 +1,65 @@
 package com.nextstep.model;
 
 public class UserModel {
-	
-	private int id;
-	
-	private String name,adress,gender,course;
-	
-	private int age;
 
-	public int getId() {
-		return id;
-	}
+    private int id;
+    private String name, adress, gender, course;
+    private int age;
+    private String imagePath; // store image path
 
-	public void setId(int id) {
-		this.id = id;
-	}
+    public int getId() {
+        return id;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public void setId(int id) {
+        this.id = id;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public String getAdress() {
-		return adress;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public void setAdress(String adress) {
-		this.adress = adress;
-	}
+    public String getAdress() {
+        return adress;
+    }
 
-	public String getGender() {
-		return gender;
-	}
+    public void setAdress(String adress) {
+        this.adress = adress;
+    }
 
-	public void setGender(String gender) {
-		this.gender = gender;
-	}
+    public String getGender() {
+        return gender;
+    }
 
-	public String getCourse() {
-		return course;
-	}
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
 
-	public void setCourse(String course) {
-		this.course = course;
-	}
+    public String getCourse() {
+        return course;
+    }
 
-	public int getAge() {
-		return age;
-	}
+    public void setCourse(String course) {
+        this.course = course;
+    }
 
-	public void setAge(int age) {
-		this.age = age;
-	}
+    public int getAge() {
+        return age;
+    }
 
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getImagePath() {
+        return imagePath;
+    }
+
+    public void setImagePath(String imagePath) {
+        this.imagePath = imagePath;
+    }
 }
