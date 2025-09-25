@@ -27,9 +27,9 @@ public class UserJFrame extends JFrame {
     public JRadioButton rdbtnOthers;
     public JLabel id;
     private JLabel lblImagePreview;   
-    private File selectedImageFile;   // store selected image file
+    private File selectedImageFile;  
 
-    private static final String IMAGE_FOLDER = "src/images/com/np"; // folder to save images
+    private static final String IMAGE_FOLDER = "src/images/com/np"; 
 
     public static void main(String[] args) {
         EventQueue.invokeLater(() -> {
@@ -43,7 +43,7 @@ public class UserJFrame extends JFrame {
     }
 
     public UserJFrame() {
-        // Frame icon
+
         ImageIcon icon = new ImageIcon(
                 getClass().getResource("/images/com/np/wallpaperflare.com_wallpaper (1).jpg"));
         Image img = icon.getImage().getScaledInstance(64, 64, Image.SCALE_SMOOTH);
@@ -122,13 +122,13 @@ public class UserJFrame extends JFrame {
         id.setBounds(330, 11, 46, 14);
         contentPane.add(id);
 
-        // Image preview
+
         lblImagePreview = new JLabel();
         lblImagePreview.setBounds(330, 225, 77, 54);
         lblImagePreview.setBorder(BorderFactory.createLineBorder(java.awt.Color.BLACK));
         contentPane.add(lblImagePreview);
 
-        // File chooser icon button using system folder icon
+        
         Icon folderIcon = UIManager.getIcon("FileView.directoryIcon");
         JButton btnChooseImage = new JButton(folderIcon);
         btnChooseImage.setBounds(430, 243, 40, 40);
@@ -136,7 +136,7 @@ public class UserJFrame extends JFrame {
 
         btnChooseImage.addActionListener(e -> chooseImage());
 
-        // Submit button
+      
         JButton btnNewButton = new JButton("Submit");
         btnNewButton.addActionListener(e -> submitData());
         btnNewButton.setBounds(139, 300, 89, 23);
